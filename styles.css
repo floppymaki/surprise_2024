@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-image: url('img/sint.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top left;
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: 75%;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 15px;
+    padding: 20px;
+}
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCD00;
+    border: 2px solid #FFCD00;
+    color: #57377A;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.highlight {
+    border: 2px dashed red;
+}
